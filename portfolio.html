@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <!-- Include the FontAwesome link here -->
+    <script src="https://kit.fontawesome.com/c80a7ae3b4.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+        }
+		
+		.navbar .nav-link{
+			font-size: 30px;
+		}
+		
+		      .search-container {
+            text-align: center;
+        }
+
+        .search-icon {
+            color: red;
+            font-size: 24px; /* Adjust the font size to make the icon bigger */
+            cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+        }
+
+        .search-text {
+            color: red;
+            display: block;
+        }
+
+        .search-box {
+            display: none; /* Initially hide the search input */
+        }
+		
+		.nav-link {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+        .portfolio {
+            margin-top: none;
+            margin-bottom: 10px;
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .portfolio h2 {
+            color: white;
+			font-size: 75px;
+        }
+
+        .portfolio-images {
+            margin-bottom: 2px;
+			margin-top: none;
+        }
+
+        .portfolio-images img {
+            margin: 5px;
+            background-color: white;
+        }
+
+        .contact-info {
+            background-color: white !important;
+        }
+		
+		/* Set a fixed height for the images in the first row */
+        .portfolio-images .img-responsive {
+            height: 300px; /* Adjust the height as needed */
+        }
+    </style>
+</head>
+<body onLoad="MM_preloadImages('images/gew.jpg')">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="logo.png" width="120px"/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto"> <!-- Use ml-auto to push items to the right -->
+        <li class="nav-item">
+            <a class="nav-link" href="home.html" target="_blank">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="aboutus.html" target="_blank">About Us <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contactus.html" target="_blank">Contact Us</a>
+        </li>
+        <li class="nav-item  active">
+            <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="offers.html" target="_blank">Offers</a>
+        </li>
+    </ul>
+        <div class="search-container">
+        <a href="#" onclick="toggleSearch()">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </a>
+        <br>
+        <span class="search-text">search</span>
+        <input type="search" id="search-box" class="search-box" placeholder="search here">
+    </div>
+
+    <script>
+        function toggleSearch() {
+            const searchBox = document.getElementById("search-box");
+            const searchText = document.querySelector(".search-text");
+
+            if (searchBox.style.display === "none") {
+                searchBox.style.display = "block";
+                searchBox.focus();
+                searchText.style.display = "none"; // Hide the "search" text
+            } else {
+                searchBox.style.display = "none";
+                searchText.style.display = "block"; // Show the "search" text
+            }
+        }
+    </script>
+    </div>
+</nav>
+<section>
+    <div {float: none|left|right.} </div>
+    <div class="portfolio">
+        <div class="row portfolio-images">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <img src="data1/images/awe.jpg" alt="awe" title="awe" class="img-responsive" width="100%"/>
+            </div>
+            <div class="col-2">
+                <img src="data1/images/bow.jpg" alt="bow" title="bow" class="img-responsive" width="100%" />
+            </div>
+            <div class="col-2">
+                <img src="data1/images/cow.jpg" alt="cow" title="cow" class="img-responsive" class="img-responsive" width="100%"/>
+            </div>
+            <div class="col-2">
+                <img src="data1/images/dough.jpg" alt="dough" title="dough" class="img-responsive" width="100%"/>
+            </div>
+            <div class="col-2">
+                <img src="data1/images/eel.jpg" alt="eel" title="eel" class="img-responsive" width="100%"/>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <section>
+        <div class="portfolio" style="height: 120px; background-color: #FF0000;">
+            <h2>Portfolio</h2>
+        </div>
+    </section>
+    <div class="portfolio">
+        <div class="row portfolio-images">
+            <div class="col-4">
+                <img src="data1/images/gew.jpg" alt="heel" title="heel" class="img-responsive" width="100%"/>
+            </div>
+            <div class="col-4">
+                <img src="data1/images/reel.jpg" alt="jew" title="jew" class="img-responsive" width="100%"/>
+            </div>
+            <div class="col-4">
+                <img src="data1/images/zew.jpg" alt="reel" title="reel" class="img-responsive" width="100%"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer section -->
+<footer class="contact-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <h3 class="text-left"><em class="fa fa-phone contact-icon" style="color: white;"></em>Contact Us</h3>
+                <p>+254-20-2711-262</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <h3 class="text-left"><i class="fa fa-envelope contact-icon" style="color: white;"></i>Mail Us</h3>
+                <address class="text-left">
+                    Ragati Road info@ktb.go.ke
+                </address>
+            </div>
+            <div class="col-md-4 col-12">
+                <h3 class="text-left">Find Us On</h3>
+                <a href="https://web.facebook.com/KenyaTourism" target="_blank"><i
+                        class="fa fa-facebook contact-icon" style="color: white;"></i></a>
+                <a href="https://www.instagram.com/magicalkenya/" target="_blank"><i
+                        class="fa fa-instagram contact-icon" style="color: white;"></i></a>
+                <a href="https://www.youtube.com/user/magicalkenya" target="_blank"><i
+                        class="fa fa-youtube contact-icon" style="color: white;"></i></a>
+                <a href="https://twitter.com/magicalkenya" target="_blank"><i
+                        class="fa-brands fa-x-twitter contact-icon" style="color: white;"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../Documents/js/jquery-3.3.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../Documents/js/popper.min.js"></script>
+<script src="../Documents/js/bootstrap-4.3.1.js"></script>
+</body>
+</html>

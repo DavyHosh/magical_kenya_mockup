@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+#offers{
+	background-image: url("../images/offers.jpg")
+	background-repeat: no-repeat;
+	background-color: #dc3545;
+	opacity: 0.5; 
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <!-- Include the FontAwesome link here -->
+    <script src="https://kit.fontawesome.com/c80a7ae3b4.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <style>
+        #about {
+            padding-left: 30px;
+        }
+		
+		.navbar .nav-link{
+			font-size: 30px;
+		}
+
+        #aboutrow {
+            margin-left: 0 !important;
+            margin-right: 0 !important; 
+			position: relative; /* Set the parent div to relative position */
+    }
+
+    #aboutrow::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 0, 0, 0.9); /* Red color with opacity */
+    }
+
+        .search-container {
+            text-align: center;
+        }
+
+        .search-icon {
+            color: red;
+            font-size: 24px; /* Adjust the font size to make the icon bigger */
+            cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+        }
+
+        .search-text {
+            color: red;
+            display: block;
+        }
+
+        .search-box {
+            display: none; /* Initially hide the search input */
+        }
+    </style>
+    <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+<body style="background-color: white;"> <!-- Set the background color of the body to white -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="logo.png" width="120px"/>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" background-color="white">
+                <li class="nav-items">
+                    <a class="nav-link" href="home.html" target="_blank">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="aboutus.html" target="_blank">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html" target="_blank">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="offers.html" target="_blank">Offers</a>
+                </li>
+            </ul>
+            <div class="search-container">
+                <a href="#" onclick="toggleSearch()">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </a>
+                <br>
+                <span class="search-text">search</span>
+                <input type="search" id="search-box" class="search-box" placeholder="search here">
+            </div>
+        </div>
+    </nav>
+        <div class="row" style="background-image: url('data1/images/few.jpg'); background-size: cover; background-repeat: no-repeat; color: white; padding: 85px" id="aboutrow">
+            <div class="col-md-6 col-12 mt-4 pt-4" id="about" style="padding-left: 10px;">
+                <h1 class="text-capitalize" style="font-size: 70px;">About us</h1>
+                <p class="text-justify" style="font-size: 30px;">Astride the equator, Kenya is home to intimate awe-inspiring, and magical travel experiences. All year round, visitors enjoy exhilarating wildlife experiences, the breathtaking outdoors and landscapes, the tranquil and adventure of Kenya's Coast, the enriching cultural encounters, and the warmth of the Kenyan people.</p>
+            </div>
+            <div class="col-md-6 col-12">
+			  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/gew.jpg',1)" style="padding-left: 70px!important;"> <img src="images/few.jpg" alt="" width="550" height="423" id="Image3"></a>
+              <p style="font-size: 18px" align="center">Karibu Kenya, <br> Welcome to MagicalKenya.</p>
+
+
+            </div>
+        </div>
+        <div class="isaac" width="50%px" height="30%px">
+        </div>
+    </section>
+    <div class="section"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <h3 class="text-left"><em class="fa fa-phone contact-icon" style="color: white;"></em>Contact Us</h3>
+                    <p>+254-20-2711-262</p>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h3 class="text-left"><i class="fa fa-envelope contact-icon" style="color: white;"></i>Mail Us</h3>
+                    <address class="text-left">
+                        Ragati Road info@ktb.go.ke
+                    </address>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h3 class="text-left">Find Us On</h3>
+                    <a href="https://web.facebook.com/KenyaTourism" target="_blank"><i class="fa fa-facebook contact-icon" style="color: white;"></i></a>
+                    <a href="https://www.instagram.com/magicalkenya/" target="_blank"><i class="fa fa-instagram contact-icon" style="color: white;"></i></a>
+                    <a href="https://www.youtube.com/user/magicalkenya" target="_blank"><i class="fa fa-youtube contact-icon" style="color: white;"></i></a>
+                    <a href="https://twitter.com/magicalkenya" target="_blank"><i class="fa-brands fa-x-twitter contact-icon" style="color: white;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+    <script>
+        function toggleSearch() {
+            const searchBox = document.getElementById("search-box");
+            const searchText = document.querySelector(".search-text");
+
+            if (searchBox.style.display === "none") {
+                searchBox.style.display = "block";
+                searchBox.focus();
+                searchText.style.display = "none"; // Hide the "search" text
+            } else {
+                searchBox.style.display = "none";
+                searchText.style.display = "block"; // Show the "search" text
+            }
+        }
+    </script>
+</body>
+</html>
